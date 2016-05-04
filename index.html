@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RSS Reader</title>
+	<link rel="stylesheet" type="text/css" href="style/ui.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+
+	<article id="reader">
+		<nav id="sidebar">
+			<div id="addFeed">
+				<span></span>
+			</div>
+		</nav>
+
+		<article id="feedContainer">
+			<div id="feeds">
+			</div>
+			<div id="feedLoader">
+				<div class="loader"></div>
+				<span>Loading</span>
+			</div>
+			<div id="feedInput">
+				<article>
+					<input type="text" id="feedName" placeholder="CNN Top News"></input>
+					<input type="text" id="feedURL" placeholder="http://cnn.com/feed/"></input>
+					<input type="submit" id="feedInputSubmit" value="add"></input>
+				</article>
+			</div>
+		</article>
+
+		<article id="feedInfo">
+			<span id="feedImg">
+				<img src="">
+			</span>
+			<span id="feedTitle">CNN Top News</span>
+			<span id="feedSubTitle">CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.
+			</span>
+			<span id="feedUpdateInterval">15 Minutes</span>
+
+			<div id="settingToggle">
+				<span class="toggleInfo">Auto Update</span>
+				<span class="toggle on"></span>
+			</div>
+
+			<div id="deleteFeed">
+				
+			</div>
+		</article>
+
+	</article>
+
+
+	<script type="text/javascript" src="script/jQuery.js"></script>
+	<script type="text/javascript" src="script/Ajax.js"></script>
+	<script type="text/javascript" src="script/UIManager.js"></script>
+
+</body>
+</html>
