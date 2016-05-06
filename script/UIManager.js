@@ -288,9 +288,12 @@ var addNewFeed = function(name, url) {
 $(function() {
 	obj.init($("#addFeed"), $("#feedInput"));
 
-	$("#feedInputSubmit").click(function(e) {
+	$("#feedInputSubmit").submit(function(e) {
 		var name = $("#feedName").val();
 		var url = $("#feedURL").val();
+
+		console.log(name, url);
+		if(name == "" || url == "") return false;
 
 		hideInfo();
 
@@ -301,7 +304,7 @@ $(function() {
 
 		$("#feedInput").hide();
 
-		return false;
+		e.preventDefault();
 	});
 
 	$(".toggle").click(function() {
@@ -322,6 +325,10 @@ $(function() {
 		var id = $(this).data('id');
 		remove(id);
 		hideInfo();
+	});
+
+	$("#closeInputForm").click(function() {
+		$("#feedInput").hide();
 	});
 
 

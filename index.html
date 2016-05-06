@@ -23,11 +23,12 @@
 				<span>Loading</span>
 			</div>
 			<div id="feedInput">
-				<article>
-					<input type="text" id="feedName" placeholder="CNN Top News"></input>
-					<input type="text" id="feedURL" placeholder="http://cnn.com/feed/"></input>
+				<form>
+					<input type="text" pattern="[a-zA-Z0-9_-\s]+" title="Can only accept Alphanumeric Characters, -, _ and space." id="feedName" placeholder="CNN Top News" required="required"></input>
+					<input type="url" id="feedURL" placeholder="http://cnn.com/feed/" required="required"></input>
 					<input type="submit" id="feedInputSubmit" value="add"></input>
-				</article>
+				</form>
+				<span id="closeInputForm"></span>
 			</div>
 		</article>
 
