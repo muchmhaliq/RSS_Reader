@@ -7,21 +7,27 @@
 </head>
 <body>
 
-
 	<article id="reader">
+		<!-- Sidebar to show feed groups -->
 		<nav id="sidebar">
 			<div id="addFeed">
 				<span></span>
 			</div>
 		</nav>
 
+		<!-- Feed Container -->
 		<article id="feedContainer">
-			<div id="feeds">
-			</div>
+
+			<!-- Feeds interior container to show all the feeds -->
+			<div id="feeds"></div>
+
+			<!-- Loader to show when feed is loading -->
 			<div id="feedLoader">
 				<div class="loader"></div>
 				<span>Loading</span>
 			</div>
+
+			<!-- Form for adding Feed Groups -->
 			<div id="feedInput">
 				<form>
 					<input type="text" pattern="[a-zA-Z0-9_-\s]+" title="Can only accept Alphanumeric Characters, -, _ and space." id="feedName" placeholder="CNN Top News" required="required"></input>
@@ -32,12 +38,13 @@
 			</div>
 		</article>
 
+		<!-- Right Sidebar for specific Feed Group Information and deleteion -->
 		<article id="feedInfo">
 			<span id="feedImg">
 				<img src="">
 			</span>
-			<span id="feedTitle">CNN Top News</span>
-			<span id="feedSubTitle">CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.
+			<span id="feedTitle"></span>
+			<span id="feedSubTitle">
 			</span>
 			<span id="feedUpdateInterval">15 Minutes</span>
 
@@ -46,9 +53,7 @@
 				<span class="toggle on"></span>
 			</div>
 
-			<div id="deleteFeed">
-				
-			</div>
+			<div id="deleteFeed"></div>
 		</article>
 
 	</article>

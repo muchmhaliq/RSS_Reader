@@ -1,3 +1,7 @@
+/**
+ *	Webkit Scrollbar Custimation
+ *	
+ */
 ::-webkit-scrollbar {
 	width: 6px;
 }
@@ -30,6 +34,10 @@ article#reader {
 	box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, .7);
 }
 
+/**
+ *	Left Sidebar
+ *	
+ */
 nav#sidebar {	
 	display: inline-block;
 	width: 25%;
@@ -40,6 +48,10 @@ nav#sidebar {
 	position: relative;
 }
 
+/**
+ *	Feed Group Button in Left SIdebar
+ *	
+ */
 nav#sidebar > div.rssid {
 	display: block;
 	width: 100%;
@@ -89,6 +101,10 @@ div.rssid span {
 	font-size: 12px;
 }
 
+/**
+ *	Add Feed Button customization
+ *	
+ */
 div#addFeed {	
 	position: absolute;
 	bottom: 0;
@@ -123,6 +139,10 @@ article#feedContainer.shrink {
 	width: 50%;
 }
 
+/**
+ *	Feed Information
+ *	
+ */
 div.feed {
 	width: 100%;
 	height: auto;
@@ -157,6 +177,10 @@ div.feed p.description {
 	color: #444;
 }
 
+/**
+ *	Loader to show when loading feed
+ *	
+ */
 div#feedLoader, div#feedInput {
 	width: 100%;
 	height: 100%;
@@ -218,6 +242,10 @@ div#feedLoader span {
 	}
 }
 
+/**
+ *	RSS Group Input Form
+ *	
+ */
 input[type=text], input[type=url] {
 	width: calc(100% - 20px);
 	height: 20px;
@@ -269,6 +297,10 @@ div#feedInput #closeInputForm:hover {
 	opacity: 1;
 }
 
+/**
+ *	RSS Group Information Right Sidebar
+ *	
+ */
 article#feedInfo {
 	display: inline-block;
 	float: left;
@@ -330,6 +362,7 @@ span#feedUpdateInterval:before {
 	content: "Auto Update Interval";
 }
 
+/* Auto Update Toggle Button */
 span.toggle {
 	width: 40px;
 	height: 20px;
@@ -367,6 +400,7 @@ span.toggle.off:after {
 	transition: all 50ms linear;
 }
 
+/* Delete Feed Button */
 div#deleteFeed {
 	margin-top: 50px;
 	width: 100%;
